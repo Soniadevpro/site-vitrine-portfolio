@@ -639,24 +639,36 @@ nav {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--secondary);
     font-family: 'Work Sans', sans-serif;
     font-size: 0.95rem;
     transition: all 0.3s ease;
 }
 
+/* Meilleur contraste en dark mode */
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: rgba(245, 245, 240, 0.5);
+    color: rgba(245, 245, 240, 0.6);
 }
 
 .form-group textarea {
