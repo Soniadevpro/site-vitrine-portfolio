@@ -1,27 +1,21 @@
-## 📄 .gitignore
-```
-# OS
-.DS_Store
-Thumbs.db
+# Environnements virtuels
+venv/
+.env/
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Django / SQLite
+*.sqlite3
+
+# Fichiers statiques collectés
+staticfiles/
 
 # Logs
 *.log
-npm-debug.log*
 
-# Dependencies
-node_modules/
-
-# Build
-dist/
-build/
-
-# Environment variables
-.env
-.env.local
+# OS
+.DS_Store
+Thumbs.db
